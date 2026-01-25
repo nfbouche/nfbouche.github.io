@@ -1,4 +1,4 @@
-Website: [nfbouche.github.io](nfbouche.github.io)
+Website: [nfbouche.github.io](https://nfbouche.github.io)
 
 Spectral by HTML5 UP
 html5up.net | @ajlkn
