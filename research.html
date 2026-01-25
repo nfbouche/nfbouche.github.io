@@ -22,25 +22,30 @@
 				<!-- Main -->
 					<article id="main">
 						<header>
-							<h2>My research</h2>
+							<h2>Nicolas's research</h2>
 						</header>
 						<section id="two" class="wrapper alt style2">
 							<section class="spotlight">
 								<div class="image"><img src="images/M33_rotation_curve_HI.gif" style="object-fit:cover; width: 60%;" alt="" /></div><div class="content">
-									<h2><a href="dark_matter.html">Dark matter modeling</a></h2>
-									<p>SDSS J0100+1818 is an unique strong lensing system, with five sources strongly lensed by a ultra massive elliptical galaxy. This configuration allows us to accurately measure the mass distribution of the lens and also to measure the values of some cosmological parameters.
-										Read more <a href="dark_matter.html">here</a>.</p>
+									<h2><a href="project_darkmatter.html">Dark matter modeling</a></h2>
+									<p> We are using the rotation curves of distant galaxies 
+										to constrain the nature of dark matter 
+										using 3D forward modeling wit <a href="galpak.html">GalPaK3D</a>.
+										Project funded by the ANR <a href="https://dark.univ-lyon1.fr"> DARK</a>. 
+										
+										Read more <a href="project_darkmatter.html">here</a>.</p>
 								</div>
 							</section>
 							<section class="spotlight">
-								<div class="image"><img src="images/clumps_copertina.png" alt="" /></div><div class="content">
-									<h2><a href="project_megaflow.html">Characterizing the stellar population of high-$z$ star forming clumps. A sample and D2</a></h2>
+								<div class="image"><img src="images/cropped-eso1330a-credit.jpg" style="object-fit:cover; width: 60%;" alt="" /></div><div class="content">
+									<h2><a href="project_megaflow.html">Characterizing the circum-galactic medium of 
+										star forming galaxies.</a></h2>
 									<p>Which are the physical properties of the star forming regions observed in high redshift galaxies? What kind of stellar populations do we observe? Are we observing the progenitors of the local globular clusters? <br />
 									<a href="project_clumps.html">Learn</a> how I am using state-of-the-art NIRSpec, NIRCam, and VLT/XShooter data to answer these questions.</p>
 								</div>
 							</section>
 							<section class="spotlight">
-								<div class="image"><img src="images/bathtub-150x150.png" alt="" width="150" height="150" /></div><div class="content">
+								<div class="image"><img src="images/bathtub-300x192.png" style="object-fit:cover; width: 60%;" alt="" /></div><div class="content">
 									<h2><a href="project_bathtub.html">The origin of the scaling relations</a></h2>
 									<p>The Lyman-$\alpha$ line is the strongest tracer of neutral hydrogen in the Universe but its origin is still under debate. <a href="project_bathtub.html">Read more</a> to find out how I am using spectropolarimetry data to study the Lyman-$\alpha$ polarization and discriminate between the different scenarios. </p>
 								</div>
@@ -51,6 +56,14 @@
 
 			</div>
 
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
 		<script>
 			// Load header
 			fetch('header.html')
@@ -82,6 +95,18 @@
 				})
 				.catch(error => console.error('Error loading footer:', error));
 		</script>
+			<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+		<script>
+			MathJax = {
+				tex: {
+					inlineMath: [['$', '$'], ['\\(', '\\)']]
+				},
+				svg: {
+					fontCache: 'global'
+				}
+			};
+		</script>
+		<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 </body>
 </html>
