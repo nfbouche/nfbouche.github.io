@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Nicolas F. Bouché - research</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<div id="header-placeholder"></div>
+
+				<!-- Main -->
+					<article id="main">
+						<header>
+							<h2>My research</h2>
+						</header>
+						<section id="two" class="wrapper alt style2">
+							<section class="spotlight">
+								<div class="image"><img src="images/GL_img1.png" style="object-fit:cover alt="" /></div><div class="content">
+									<h2><a href="project_lensing.html">Strong lensing modeling</a></h2>
+									<p>SDSS J0100+1818 is an unique strong lensing system, with five sources strongly lensed by a ultra massive elliptical galaxy. This configuration allows us to accurately measure the mass distribution of the lens and also to measure the values of some cosmological parameters. Read more <a href="project_lensing.html">here</a>.</p>
+								</div>
+							</section>
+							<section class="spotlight">
+								<div class="image"><img src="images/clumps_copertina.png" alt="" /></div><div class="content">
+									<h2><a href="project_clumps.html">Characterizing the stellar population of high-$z$ star forming clumps. A sample and D2</a></h2>
+									<p>Which are the physical properties of the star forming regions observed in high redshift galaxies? What kind of stellar populations do we observe? Are we observing the progenitors of the local globular clusters? <br />
+									<a href="project_clumps.html">Learn</a> how I am using state-of-the-art NIRSpec, NIRCam, and VLT/XShooter data to answer these questions.</p>
+								</div>
+							</section>
+							<section class="spotlight">
+								<div class="image"><img src="images/copertina_pol.png" alt="" /></div><div class="content">
+									<h2><a href="project_polarimetry.html">The origin of the Lyman-$\alpha$ emission</a></h2>
+									<p>The Lyman-$\alpha$ line is the strongest tracer of neutral hydrogen in the Universe but its origin is still under debate. <a href="project_polarimetry.html">Read more</a> to find out how I am using spectropolarimetry data to study the Lyman-$\alpha$ polarization and discriminate between the different scenarios. </p>
+								</div>
+							</section>
+							<section class="spotlight">
+								<div class="image"><img src="images/banner_outreach.jpeg" alt="" /></div><div class="content">
+									<h2><a href="outreach.html">My research to my grandparents</a></h2>
+									<p>If you are interested in a simplified explanation of my work, you can read more <a href="outreach.html">here</a>. <br />
+									If you really are my grandmother, you may be interested in the <a href="outreach_IT.html">Italian version</a>.
+								</div>
+							</section>
+						</section>
+					</article>
+
+				<div id="footer-placeholder"></div>
+
+			</div>
+
+		<script>
+			// Load header
+			fetch('header.html')
+				.then(response => response.text())
+				.then(data => {
+					document.getElementById('header-placeholder').innerHTML = data;
+					// Initialize menu after header is loaded
+					$('#menu')
+						.append('<a href="#menu" class="close"></a>')
+						.appendTo($('body'))
+						.panel({
+							delay: 500,
+							hideOnClick: true,
+							hideOnSwipe: true,
+							resetScroll: true,
+							resetForms: true,
+							side: 'right',
+							target: $('body'),
+							visibleClass: 'is-menu-visible'
+						});
+				})
+				.catch(error => console.error('Error loading header:', error));
+
+			// Load footer
+			fetch('footer.html')
+				.then(response => response.text())
+				.then(data => {
+					document.getElementById('footer-placeholder').innerHTML = data;
+				})
+				.catch(error => console.error('Error loading footer:', error));
+		</script>
+
+</body>
+</html>

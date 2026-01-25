@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Nicolas F. Bouché - CV</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<div id="header-placeholder"></div>
+
+				<!-- Main -->
+					<article id="main">
+						<header>
+							<h2>Curriculum Vitæ</h2>
+							<p>Give a look to the pdf and download it</p>
+						</header>
+						<section class="wrapper style5">
+							<div class="inner">
+
+							<h3> Publications</h3>
+							First author publication <a target="_blank" href="https://ui.adsabs.harvard.edu/public-libraries/dEJP-9hpT2G9Co5N7L-KRQ"> from ADS</a>
+							<br></br>
+							Full publication list <a target="_blank" href="https://ui.adsabs.harvard.edu/public-libraries/xmkpCyPHQzGWehMKEdPYAQ"> from ADS</a>
+ 
+							<h3>Short CV</h3>
+							<p>Some mobile devices do not support this inline rendering of PDFs. 
+								If you are reading from a mobile phone and only see the first page, 
+								please <a href="cv_nbouche_en_1p.pdf" target="_blank"> download my CV instead, by clicking here</a>.</p>
+							<!-- Download it from this folder:
+							<ul class="actions">
+								<li><a href="https://drive.google.com/file/d/1tI48VewgGweWG-c79085RCgXi0-I6AxK/view?usp=sharing" class="button primary icon solid fa-download">DOWNLOAD</a></li>
+							</ul>-->
+							<object data="images/cv_nbouche_en_1p.pdf" type="application/pdf" width="100%" height="500px">
+								<p>Unable to display PDF file. <a href="images/cv_nbouche_en_1p.pdf">Download</a> instead.</p>
+							  </object>
+									
+						</section>
+					</article>
+
+				<div id="footer-placeholder"></div>
+
+			</div>
+
+		<script>
+			// Load header
+			fetch('header.html')
+				.then(response => response.text())
+				.then(data => {
+					document.getElementById('header-placeholder').innerHTML = data;
+					// Initialize menu after header is loaded
+					$('#menu')
+						.append('<a href="#menu" class="close"></a>')
+						.appendTo($('body'))
+						.panel({
+							delay: 500,
+							hideOnClick: true,
+							hideOnSwipe: true,
+							resetScroll: true,
+							resetForms: true,
+							side: 'right',
+							target: $('body'),
+							visibleClass: 'is-menu-visible'
+						});
+				})
+				.catch(error => console.error('Error loading header:', error));
+
+			// Load footer
+			fetch('footer.html')
+				.then(response => response.text())
+				.then(data => {
+					document.getElementById('footer-placeholder').innerHTML = data;
+				})
+				.catch(error => console.error('Error loading footer:', error));
+		</script>
+
+</body>
+</html>
