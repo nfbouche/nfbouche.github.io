@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Nicolas F. Bouché - The Origin of the Lyman-α Emission</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<div id="header-placeholder"></div>
+
+				<!-- Main -->
+					<article id="main">
+						<header>
+							<h2>The Origin of the Lyman-α Emission</h2>
+							<p>The Lyman-α line is the strongest tracer of neutral hydrogen in the Universe, but its origin is still under debate.</p>
+						</header>
+						<section class="wrapper style5">
+							<div class="inner">
+
+								<h3>The Bathtub Model</h3>
+								<p>The bathtub model is used to study the Lyman-α polarization and discriminate between different scenarios for its origin.</p>
+
+								<p>Details about the methodology, spectropolarimetry data, and results will be added here.</p>
+
+							</div>
+						</section>
+					</article>
+
+				<div id="footer-placeholder"></div>
+
+		</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+		<script>
+			// Load header
+			fetch('header.html')
+				.then(response => response.text())
+				.then(data => {
+					document.getElementById('header-placeholder').innerHTML = data;
+					// Initialize menu after header is loaded
+					$('#menu')
+						.append('<a href="#menu" class="close"></a>')
+						.appendTo($('body'))
+						.panel({
+							delay: 500,
+							hideOnClick: true,
+							hideOnSwipe: true,
+							resetScroll: true,
+							resetForms: true,
+							side: 'right',
+							target: $('body'),
+							visibleClass: 'is-menu-visible'
+						});
+				})
+				.catch(error => console.error('Error loading header:', error));
+
+			// Load footer
+			fetch('footer.html')
+				.then(response => response.text())
+				.then(data => {
+					document.getElementById('footer-placeholder').innerHTML = data;
+				})
+				.catch(error => console.error('Error loading footer:', error));
+		</script>
+			<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+		<script>
+			MathJax = {
+				tex: {
+					inlineMath: [['$', '$'], ['\\(', '\\)']]
+				},
+				svg: {
+					fontCache: 'global'
+				}
+			};
+		</script>
+		<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</body>
+</html>
