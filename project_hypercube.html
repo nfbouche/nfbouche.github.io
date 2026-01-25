@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Nicolas F. Bouché - Hypercube Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<div id="header-placeholder"></div>
+
+				<!-- Main -->
+					<article id="main">
+						<header>
+							<h2>Hypercube Project</h2>
+							<p>Research on deep learning applications in 3D astrophysical data analysis.</p>
+						</header>
+						<section class="wrapper style5">
+							<div class="inner">
+
+								<h3>Project Overview</h3>
+								<p>The Hypercube project explores the use of deep learning techniques for analyzing 3D spectroscopic data in astrophysics. This includes developing neural networks for tasks such as galaxy morphology classification, kinematic modeling, and anomaly detection in large-scale surveys.</p>
+
+								<p>Key aspects of the research involve:
+								<ul>
+									<li>Convolutional Neural Networks (CNNs) adapted for 3D data cubes</li>
+									<li>Integration with existing tools like GalPaK3D</li>
+									<li>Applications to MUSE and SINFONI data</li>
+								</ul>
+								</p>
+
+								<h3>Related Links</h3>
+								<p>For more information, visit the <a href="https://deeplearning3d.scienceconf.org/" target="_blank">Deep Learning 3D conference website</a>.</p>
+
+								<p>Publications and further details will be added here.</p>
+
+							</div>
+						</section>
+					</article>
+
+				<div id="footer-placeholder"></div>
+
+		</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+		<script>
+			// Load header
+			fetch('header.html')
+				.then(response => response.text())
+				.then(data => {
+					document.getElementById('header-placeholder').innerHTML = data;
+					// Initialize menu after header is loaded
+					$('#menu')
+						.append('<a href="#menu" class="close"></a>')
+						.appendTo($('body'))
+						.panel({
+							delay: 500,
+							hideOnClick: true,
+							hideOnSwipe: true,
+							resetScroll: true,
+							resetForms: true,
+							side: 'right',
+							target: $('body'),
+							visibleClass: 'is-menu-visible'
+						});
+				})
+				.catch(error => console.error('Error loading header:', error));
+
+			// Load footer
+			fetch('footer.html')
+				.then(response => response.text())
+				.then(data => {
+					document.getElementById('footer-placeholder').innerHTML = data;
+				})
+				.catch(error => console.error('Error loading footer:', error));
+		</script>
+			<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+		<script>
+			MathJax = {
+				tex: {
+					inlineMath: [['$', '$'], ['\\(', '\\)']]
+				},
+				svg: {
+					fontCache: 'global'
+				}
+			};
+		</script>
+		<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</body>
+</html>
