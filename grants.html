@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Nicolas F. Bouché - Grants</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<div id="header-placeholder"></div>
+
+				<!-- Main -->
+					<article id="main">
+						<header>
+							<h2>Grants</h2>
+							<p>Funding and grants supporting my research.</p>
+						</header>
+						<section class="wrapper style5">
+							<div class="inner">
+
+								<h3>Current and Past Grants</h3>
+								<ul>
+									<li><strong>ANR DARK</strong> - Project on dark matter modeling using rotation curves.</li>
+									<li>Other grants and funding sources will be listed here.</li>
+								</ul>
+
+								<p>Details about each grant, including objectives, funding amounts, and durations, will be added.</p>
+
+							</div>
+						</section>
+					</article>
+
+				<div id="footer-placeholder"></div>
+
+		</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+		<script>
+			// Load header
+			fetch('header.html')
+				.then(response => response.text())
+				.then(data => {
+					document.getElementById('header-placeholder').innerHTML = data;
+					// Initialize menu after header is loaded
+					$('#menu')
+						.append('<a href="#menu" class="close"></a>')
+						.appendTo($('body'))
+						.panel({
+							delay: 500,
+							hideOnClick: true,
+							hideOnSwipe: true,
+							resetScroll: true,
+							resetForms: true,
+							side: 'right',
+							target: $('body'),
+							visibleClass: 'is-menu-visible'
+						});
+				})
+				.catch(error => console.error('Error loading header:', error));
+
+			// Load footer
+			fetch('footer.html')
+				.then(response => response.text())
+				.then(data => {
+					document.getElementById('footer-placeholder').innerHTML = data;
+				})
+				.catch(error => console.error('Error loading footer:', error));
+		</script>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+			<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+		<script>
+			MathJax = {
+				tex: {
+					inlineMath: [['$', '$'], ['\\(', '\\)']]
+				},
+				svg: {
+					fontCache: 'global'
+				}
+			};
+		</script>
+		<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</body>
+</html>
